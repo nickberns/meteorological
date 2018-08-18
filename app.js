@@ -4,5 +4,5 @@ request({
   url: 'https://maps.googleapis.com/maps/api/geocode/json?address=bizdojo%20takapuna%20auckland',
   json: true
 }, (error, response, body) =>{
-  console.log(body);
+  console.log(JSON.stringify(body, undefined, 2));
 });
