@@ -26,9 +26,6 @@ geocode.geocodeAddress(argv.address, (errorMessage, results) => {
         console.log(errorMessage);
       } else {
         console.log(`It's currently ${weatherResults.temperature}. It feels like ${weatherResults.apparentTemperature}.`);
-        var cTemp = Math.round((((weatherResults.temperature - 32) / 1.8) *100 ) / 100);
-        var cApTemp= Math.round((((weatherResults.apparentTemperature - 32) / 1.8) *100 ) / 100);
-        console.log('Its currently ' + cTemp + '-C  .It feels like ' + cApTemp + ' -C');
       }
     });
   }
